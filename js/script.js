@@ -17,9 +17,11 @@ var eta = Math.floor(prompt("Bene! Ora inserisci quanti anni hai, per favore!"))
 
 var prezzo = km * 0.21;
 if(eta >= 65){
-    var prezzo = Math.round(prezzo - prezzo * 0.4);
+    var prezzo = (prezzo - prezzo * 0.4);
 } else if(eta < 18) {
-    var prezzo = Math.round(prezzo - prezzo * 0.2);
+    var prezzo = (prezzo - prezzo * 0.2);
 
 }
-console.log(prezzo);
+
+
+document.getElementById("importo").innerHTML = "Devi versare:" + " " + prezzo.toFixed(2)
