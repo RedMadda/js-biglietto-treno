@@ -23,5 +23,7 @@ if(eta >= 65){
 
 }
 
-
-document.getElementById("importo").innerHTML = "Devi versare:" + " " + prezzo.toFixed(2)
+// L'output del prezzo finale va messo fuori in 
+// forma umana (con massimo due decimali, per 
+// indicare centesimi sul prezzo). 
+document.getElementById("importo").innerHTML = "Importo dovuto:" + " " + prezzo.toFixed(2) + "€."
