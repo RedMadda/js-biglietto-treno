@@ -20,10 +20,12 @@ if(eta >= 65){
     var prezzo = (prezzo - prezzo * 0.4);
 } else if(eta < 18) {
     var prezzo = (prezzo - prezzo * 0.2);
-
 }
 
 // L'output del prezzo finale va messo fuori in 
 // forma umana (con massimo due decimali, per 
 // indicare centesimi sul prezzo). 
-document.getElementById("importo").innerHTML = "Importo dovuto:" + " " + prezzo.toFixed(2) + "€."
+document.getElementById("importo").innerHTML = "Importo dovuto:" + " " + prezzo.toFixed(2) + "€.";
+
+
+
